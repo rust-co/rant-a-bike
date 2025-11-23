@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rant-a-Bike Podcast</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        .logo {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .tagline {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .divider {
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 30px auto;
+            border-radius: 2px;
+        }
+        
+        .podcast-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 15px;
+            margin: 40px 0;
+        }
+        
+        .podcast-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+        
+        .podcast-link:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .podcast-icon {
+            font-size: 1.8em;
+            margin-bottom: 8px;
+        }
+        
+        .email-section {
+            margin: 40px 0;
+        }
+        
+        .email-link {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+        
+        .email-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .mailchimp-form {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+        }
+        
+        .form-title {
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .logo {
+                width: 140px;
+                height: 140px;
+                font-size: 60px;
+            }
+            
+            .podcast-links {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🚴</div>
+        <h1>Rant-a-Bike Podcast</h1>
+        <p class="tagline">Cycling conversations, culture, and stories from around the world. Join us as we explore the intersection of bikes, travel, and adventure.</p>
+        
+        <div class="divider"></div>
+        
+        <h2 style="font-size: 1.3em; color: #333; margin: 30px 0 20px; font-weight: 600;">Listen Now</h2>
+        
+        <div class="podcast-links">
+            <a href="https://rss.com/podcasts/rant-a-bike" target="_blank" rel="noopener" class="podcast-link">
+                <span class="podcast-icon">📡</span>
+                <span>RSS Feed</span>
+            </a>
+            <a href="https://open.spotify.com/show/your-podcast-id" target="_blank" rel="noopener" class="podcast-link">
+                <span class="podcast-icon">🎵</span>
+                <span>Spotify</span>
+            </a>
+            <a href="https://www.deezer.com/show/your-podcast-id" target="_blank" rel="noopener" class="podcast-link">
+                <span class="podcast-icon">🎧</span>
+                <span>Deezer</span>
+            </a>
+            <a href="https://podcasts.apple.com/podcast/rant-a-bike/id" target="_blank" rel="noopener" class="podcast-link">
+                <span class="podcast-icon">🍎</span>
+                <span>Apple Podcasts</span>
+            </a>
+            <a href="https://www.youtube.com/c/rant-a-bike" target="_blank" rel="noopener" class="podcast-link">
+                <span class="podcast-icon">📺</span>
+                <span>YouTube</span>
+            </a>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="email-section">
+            <a href="mailto:hello@rant-a-bike.com" class="email-link">✉️ Get in Touch</a>
+        </div>
+        
+        <div class="mailchimp-form">
+            <p class="form-title">Subscribe to our newsletter for updates and exclusive content</p>
+            <!-- Mailchimp Form Begin -->
+            <div id="mc_embed_shell">
+                <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                    #mc_embed_signup{
+                        background:#fff; 
+                        clear:left; 
+                        font:14px 'Helvetica Neue',Arial,sans-serif;
+                        width:100%;
+                    }
+                    #mc_embed_signup .mc-field-group {
+                        margin-bottom: 15px;
+                    }
+                    #mc_embed_signup input.email {
+                        width: 100%;
+                        padding: 12px;
+                        border: 2px solid #ddd;
+                        border-radius: 6px;
+                        font-size: 14px;
+                        box-sizing: border-box;
+                    }
+                    #mc_embed_signup input.button {
+                        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                        color: white;
+                        padding: 12px 30px;
+                        border: none;
+                        border-radius: 6px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        width: 100%;
+                    }
+                    #mc_embed_signup input.button:hover {
+                        transform: translateY(-2px);
+                        box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+                    }
+                </style>
+                <div id="mc_embed_signup">
+                    <form class="validate" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL" style="display: block; text-align: left; font-weight: 600; margin-bottom: 8px; color: #333;">Email Address</label>
+                            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="your@email.com" required>
+                        </div>
+                        <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display:none; margin: 10px 0; color: #d63031;"></div>
+                            <div class="response" id="mce-success-response" style="display:none; margin: 10px 0; color: #27ae60;"></div>
+                        </div>
+                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                            <input type="text" name="b_" tabindex="-1" value="">
+                        </div>
+                        <div class="clear foot">
+                            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+                <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+                <script type="text/javascript">
+                    (function($) {
+                        window.fnames = new Array();
+                        window.ftypes = new Array();
+                        fnames[0]='EMAIL';
+                        ftypes[0]='email';
+                    }(jQuery));
+                    var $mcj = jQuery.noConflict(true);
+                </script>
+            </div>
+            <!-- Mailchimp Form End -->
+        </div>
+    </div>
+</body>
+</html>
